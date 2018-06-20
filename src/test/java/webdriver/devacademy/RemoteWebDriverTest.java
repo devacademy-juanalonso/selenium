@@ -15,7 +15,7 @@ public class RemoteWebDriverTest {
 	@Test
 	public void remoteHubTest() throws MalformedURLException {
 		ChromeOptions chrome = new ChromeOptions();
-		URL hubUrl = new URL("http://selenium-hub:4444/wd/hub");
+		URL hubUrl = new URL("http://localhost:4444/wd/hub");
 
 		WebDriver webDriver = new RemoteWebDriver(hubUrl, chrome);
 		webDriver.get("http://www.google.es");
